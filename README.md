@@ -9,3 +9,4 @@ rustup component add rust-src
 rustup target add thumbv7em-none-eabihf  
 xargo build --target thumbv7em-none-eabihf 
 ```
+## NOTE: Can't be built seperately run above lines after cloning Prust-RTOS-Gen
