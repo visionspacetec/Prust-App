@@ -1,0 +1,4 @@
+[dependencies.alloc]
+[dependencies.core]
+[dependencies.panic_abort]
+[dependencies.panic_unwind]
