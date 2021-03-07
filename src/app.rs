@@ -1,6 +1,6 @@
 use super::*;
-// pus sp
-use pus::{
+// prust_core sp
+use prust_core::{
     error::*,
     sp::*,
     sp::{
@@ -44,7 +44,7 @@ const BUF_LEN:usize = 1024;
 // Function reads the packet and parses it and sends parsed packet.
 pub fn handle_packets() -> ! {
     /* FUNCTION MAP AREA START */
-    let funcs: HashMap<FuncId, fn(&Vec<u8>) -> Result<(), Error>> = pus::map!(
+    let funcs: HashMap<FuncId, fn(&Vec<u8>) -> Result<(), Error>> = prust_core::map!(
         create_func_id("turn_led") => pre_turn_led as fn(&Vec::<u8>)->Result<(),Error>,
         create_func_id("set_led") => pre_set_led as fn(&Vec::<u8>)->Result<(),Error>
     );
@@ -80,7 +80,7 @@ pub fn handle_packets() -> ! {
         }
         
         let mut report_bytes: Vec<u8> = Vec::new();        
-        let mes_type = match pus::sp::get_service_type(&buffer[0..buffer.len()]) {
+        let mes_type = match prust_core::sp::get_service_type(&buffer[0..buffer.len()]) {
             Ok(m) => m,
             _ => continue, // TODO: Give warning
         };

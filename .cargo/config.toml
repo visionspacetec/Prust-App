@@ -6,5 +6,9 @@ rustflags = [
   "-C", "link-arg=-Tlink.x",
 ]
 
+[net]
+git-fetch-with-cli = true   # use the `git` executable for git operations
+
+
 [build]
 target = "thumbv7em-none-eabihf" # Cortex-M4F and Cortex-M7F (with FPU)

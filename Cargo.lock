@@ -303,6 +303,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "prust_core"
+version = "0.1.0"
+source = "git+https://github.com/visionspacetec/Prust-Core#2aeb4a9671feaf49a77a5206a90a2b250c8f9efa"
+dependencies = [
+ "arrayref",
+ "arrayvec",
+ "byteorder",
+ "hashbrown 0.8.2",
+ "libc",
+]
+
+[[package]]
 name = "prust_rtos"
 version = "0.0.1"
 dependencies = [
@@ -316,18 +328,7 @@ dependencies = [
  "heapless",
  "lazy_static",
  "libc",
- "pus",
-]
-
-[[package]]
-name = "pus"
-version = "0.1.0"
-dependencies = [
- "arrayref",
- "arrayvec",
- "byteorder",
- "hashbrown 0.8.2",
- "libc",
+ "prust_core",
 ]
 
 [[package]]
