@@ -1,5 +1,5 @@
 # Prust-App
-Main RTOS task entry point for [Prust-FreeRTOS](https://github.com/visionspacetec/Prust-FreeRTOS). This is a static Rust crate. This is a sub-module of Prust-RTOS-Gen and it depends on the external functions defined in it.  Can't be built seperately...
+Main RTOS task entry point for [Prust-FreeRTOS](https://github.com/visionspacetec/Prust-FreeRTOS). This is a static Rust crate. This is a sub-module of Prust-FreeRTOS and it depends on the external functions defined in it.  Can't be built seperately...
 # Usage
 This is a seperate repo because it has **only rust code** except the c headers. This crate can be potentially used in other projects too. **Only the Drivers glue code is dependent on the device**. 
 
