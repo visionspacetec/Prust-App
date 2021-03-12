@@ -11,7 +11,7 @@ overflow-checks=false
 opt-level=1
 
 [dependencies]
-prust_core = {git = "https://github.com/visionspacetec/Prust-Core", package = "prust_core"}
+prust_core = {git = "https://github.com/visionspacetec/Prust-Core", branch = "main", package = "prust_core"}
 libc = "0.2.86"
 freertos_rs = "0.3.0"
 embedded-ffi = "0.1.2"
